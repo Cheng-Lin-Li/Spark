@@ -1,4 +1,4 @@
-## This is an implementation of Alternating Least Squares (ALS) algorithm in Spark with Python 2.7
+## This is an implementation of Alternating Least Squares (ALS) algorithm in Spark 2.1.1 with Python 2.7
 
 ## Algorithm: Alternating Least Squares (ALS) Algorithm
 
