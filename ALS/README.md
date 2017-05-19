@@ -8,14 +8,12 @@ The task is to modify the parallel implementation of ALS (alternating least squa
 #### Usage: bin/spark-submit ALS.py input-matrix n m f k p [output-file]
   1. n is the number of rows (users) of the matrix
   
-  
   2. m is the number of columns (products). 
-  
    
   3. f is the number of dimensions/factors in the factor model. That is, U is n-by-f matrix, while V is f-by-m matrix.
   
-  
-4. k is the number of iterations.
+
+  4. k is the number of iterations.
 
 
   5. p, which is the number of partitions for the input-matrix
