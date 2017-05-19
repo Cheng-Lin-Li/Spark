@@ -26,12 +26,9 @@ The "%.4f" % RMSE is adapted to format the RMSE value, and save into file as fol
 
 1.0019 
 
-
 0.9794 
-
 
 0.8464 
 
-
-…
+...
 
