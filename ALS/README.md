@@ -12,14 +12,11 @@ The task is to modify the parallel implementation of ALS (alternating least squa
    
   3. f is the number of dimensions/factors in the factor model. That is, U is n-by-f matrix, while V is f-by-m matrix.
   
-
   4. k is the number of iterations.
-
 
   5. p, which is the number of partitions for the input-matrix
 
   6. output-file, which is the path to the output file. This parameter is optional.
-  
 
 #### Input: Take a utility matrix (mat.dat) as the input
 
