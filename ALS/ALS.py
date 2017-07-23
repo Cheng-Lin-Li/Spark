@@ -51,15 +51,12 @@ def set_std_out_2_file(filename):
     try:
         ORIG_STDOUT = sys.stdout        
         if filename != None :
-            f = file(filename, 'w')
+            f = open(filename, 'w')
             sys.stdout = f
         else:
             pass    
     except IOError as _err:
-        if (DEBUG == True): 
-            print ('File error: ' + str (_err))
-        else :
-            pass
+        print ('File error: ' + str (_err))
         exit()
         
 def restore_std_out():
@@ -68,10 +65,7 @@ def restore_std_out():
         sys.stdout.close()
         sys.stdout = ORIG_STDOUT                         
     except IOError as _err:
-        if (DEBUG == True): 
-            print ('File error: ' + str (_err))
-        else :
-            pass
+        print ('File error: ' + str (_err))
         exit()
         
 def getInputData(filename):
@@ -87,10 +81,7 @@ def getInputData(filename):
         if DEBUG: print ('getInputData = : %s'%(_data))
         return _data
     except IOError as _err:
-        if DEBUG: 
-            print ('File error: ' + str (_err))
-        else :
-            pass
+        print ('File error: ' + str (_err))
         exit()
         
 def set_data_matrix(M, data_list = None):
@@ -118,10 +109,6 @@ def update(i, mat, ratings): #i = x, mat = V if caculate U, rating is M.
 
 
 if __name__ == "__main__":
-
-    """
-    Usage: als [M] [U] [F] [iterations] [partitions]"
-    """
 
     print("""WARN: This is a naive implementation of ALS and is given as an
       example. Please use pyspark.ml.recommendation.ALS for more
