@@ -10,36 +10,39 @@ First, local frequent itemsets are collected, which form candidates;
 next, it makes second pass through data to determine which candidates are globally frequent.
 
 #### Usage: bin/spark-submit A-Priori_SON.py <baskets.txt> <.3> <output.txt>
-
-  1. baskets.txt is a text file which contains a basket (a list of comma-separated item numbers) per line. 
-  For example
-  1,2,3 
-  1,2,5 
-  1,3,4 
-  2,3,4 
-  1,2,3,4 
-  2,3,5 
-  1,2,4 
-  1,2
-  1,2,3 
-  1,2,3,4,5
+ 
+    1. baskets.txt is a text file which contains a basket (a list of comma-separated item numbers) per line. 
+    For example
+      1,2,3 
+      1,2,5 
+      1,3,4 
+      2,3,4 
+      1,2,3,4 
+      2,3,5 
+      1,2,4 
+      1,2
+      1,2,3 
+      1,2,3,4,5
   
-  2. <.3> = minimum support ratio (that is, for an itemset to be frequent, it should appear in at least 30% of the baskets).
+    2. <.3> = minimum support ratio (that is, for an itemset to be frequent, it should appear in at least 30% of the baskets).
    
-  3. output.txt is the output result file.
+    3. output.txt is the output result file.
   
 
-#### Input: Take a utility matrix (mat.dat) as the input
+#### Input: Take a baskets (baskets.txt) as the input
 
-#### Output: Output root-mean-square deviation (RMSE) into standard output or a file after each iteration
-After each iteration, output RMSE with 4 floating points.
-The "%.4f" % RMSE is adapted to format the RMSE value, and save into file as follows. 
+#### Output: Save all frequent itemsets into one text file. 
+Each line of the file contains one itemset (a list of comma-separated item numbers). The order doesn’t matter. 
 
-1.0019 
-
-0.9794 
-
-0.8464 
-
-...
-
+    For example,
+    4
+    1,3,4 
+    1,2,3 2
+    1,3 2,4 
+    2,3 1
+    2,3,4 1,4 
+    3
+    3,4
+    1,2,4 
+    2,5 
+    1,2 5
