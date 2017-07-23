@@ -34,15 +34,17 @@ next, it makes second pass through data to determine which candidates are global
 #### Output: Save all frequent itemsets into one text file. 
 Each line of the file contains one itemset (a list of comma-separated item numbers). The order doesn’t matter. 
 
-    For example,
-    4
-    1,3,4 
-    1,2,3 2
-    1,3 2,4 
-    2,3 1
-    2,3,4 1,4 
-    3
-    3,4
-    1,2,4 
-    2,5 
-    1,2 5
+    For example
+      4
+      1,3,4 
+      1,2,3 2
+      1,3 2,4 
+      2,3 1
+      2,3,4 
+      1,4 
+      3
+      3,4
+      1,2,4 
+      2,5 
+      1,2 
+      5
