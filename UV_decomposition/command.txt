@@ -1,0 +1,73 @@
+open ec2-user@ec2-54-175-223-136.compute-1.amazonaws.com
+
+lcd C:\Users\Clark\workspace-python\DataMining\UV_decomposition
+put mat.dat
+put Cheng-Lin_Li_als.py
+put cheng-lin_li_uv.py
+
+/home/ec2-user/spark-2.1.0-bin-hadoop2.7/bin/spark-submit Cheng-Lin_Li_als.py .\mat.dat 5 5 4 10 5 t2_output.txt
+
+./testinput.txt 8 5 3 12 output.txt
+./testinput.txt 8 5 3 12 4 output2.txt
+
+mat.dat 5 5 4 10 5
+
+
+20.9139
+12.1017
+7.9235
+5.9320
+5.2624
+4.9869
+4.8243
+4.7006
+4.5968
+4.5058
+4.4236
+4.3479
+
+unix
+20.9139
+12.1017
+7.9235
+5.9320
+5.2624
+4.9869
+4.8243
+4.7006
+4.5968
+4.5058
+4.4236
+4.3479
+
+
+
+
+============
+30.0486
+29.7449
+29.0601
+11.5241
+11.4759
+11.4652
+11.4610
+11.4584
+11.4563
+11.4546
+11.4532
+11.4520
+
+unix
+30.0486
+29.7449
+23.4150
+11.5889
+11.5487
+11.5253
+11.5093
+11.4977
+11.4888
+11.4819
+11.4763
+11.4719
+

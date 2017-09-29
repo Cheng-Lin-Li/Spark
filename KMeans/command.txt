@@ -1,0 +1,8 @@
+open ec2-user@ec2-54-175-223-136.compute-1.amazonaws.com
+
+lcd C:\Users\Clark\workspace-python\DataMining\KMeans
+put kmeans.py
+put docword.enron_s-large.txt
+put docword.enron_s-small.txt
+/home/ec2-user/spark-2.1.0-bin-hadoop2.7/bin/spark-submit kmeans.py docword.enron_s-small.txt 10 0.00001
+
