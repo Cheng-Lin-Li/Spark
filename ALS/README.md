@@ -3,7 +3,7 @@
 ## Algorithm: Alternating Least Squares (ALS) Algorithm
 
 ## Task:
-The task is to modify the parallel implementation of ALS (alternating least squares) algorithm in Spark, so that it takes a utility matrix as the input, and output the root-mean-square deviation (RMSE) into standard output or a file after each iteration. The code for the algorithm is als.py under the <spark-2.1.0 installation directory>/examples/src/main/python.
+The task is to modify the parallel implementation of ALS (alternating least squares) algorithm in Spark, so that it takes a utility matrix as the input and process by UV decomposition, and output the root-mean-square deviation (RMSE) into standard output or a file after each iteration. The code for the algorithm is als.py under the <spark-2.1.0 installation directory>/examples/src/main/python.
 
 #### Usage: bin/spark-submit ALS.py input-matrix n m f k p [output-file]
   1. n is the number of rows (users) of the matrix
