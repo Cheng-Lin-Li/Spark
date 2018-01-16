@@ -19,13 +19,30 @@ Thanks,
 |[UV decomposition](https://github.com/Cheng-Lin-Li/Spark/tree/master/UV_decomposition)| An implementation of UV decomposition algorithm. The implementation goal is to decompose user/product ratings matrix M into lower-rank matrices U and V such that the difference between M and UV is minimized. Root-mean-square error (RMSE) is adopted to measure the quality of decomposition| [Source Code](https://github.com/Cheng-Lin-Li/Spark/blob/master/UV_decomposition/UV.py)|
 
 
-## Reference:
+## Reference
 * Foundations and Appliations of Data Mining - INF553 at University of Southern California
 * Spark Example code - k-means, : The K-means algorithm written from scratch against PySpark. In practice,one may prefer to use the KMeans algorithm in ML, as shown in <spark-2.1.0 installation directory>/examples/src/main/python/ml/kmeans_example.py.
 * Spark Example code - ALS, : The code for the algorithm is als.py under the <spark-2.1.0 installation directory>/examples/src/main/python
 
 
+## Disclaimer
+Last updated: January 16, 2018
+
+The information contained on https://github.com/Cheng-Lin-Li/ website (the "Service") is for general information purposes only.
+Cheng-Lin-Li's github assumes no responsibility for errors or omissions in the contents on the Service and Programs.
+
+In no event shall Cheng-Lin-Li's github be liable for any special, direct, indirect, consequential, or incidental damages or any damages whatsoever, whether in an action of contract, negligence or other tort, arising out of or in connection with the use of the Service or the contents of the Service. Cheng-Lin-Li's github reserves the right to make additions, deletions, or modification to the contents on the Service at any time without prior notice.
+
+### External links disclaimer
+
+https://github.com/Cheng-Lin-Li/ website may contain links to external websites that are not provided or maintained by or in any way affiliated with Cheng-Lin-Li's github.
+
+Please note that the Cheng-Lin-Li's github does not guarantee the accuracy, relevance, timeliness, or completeness of any information on these external websites.
+
+## Contact Information
 Cheng-Lin Li@University of Southern California
+
 chenglil@usc.edu or 
+
 clark.cl.li@gmail.com
 
