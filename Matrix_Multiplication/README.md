@@ -4,10 +4,9 @@ Matrix Multiplication: Two Phases approach to deal with huge matrix multiplicati
 ## Algorithm: Matrix Multiplication: Two Phases approach
 
 ## Task:
-The task is to implement SON algorithm in Apache Spark using Python. 
-Given a set of baskets, SON algorithm divides them into chunks/partitions and then proceed in two stages. 
-First, local frequent itemsets are collected, which form candidates; 
-next, it makes second pass through data to determine which candidates are globally frequent.
+The task is to implement MapReduce prgram in Apache Spark using Python. 
+The program computes the multiplication of two given matrices using the two phase approach.
+The implementation does not use join (and any outer join variations) in code, but use other transformations and actions to implement the MapReduce function in Spark.
 
 #### Usage: bin/spark-submit TwoPhase_Matrix_Multiplication.py <mat-A/values.txt> <mat-B/values.txt> <output.txt>
  
