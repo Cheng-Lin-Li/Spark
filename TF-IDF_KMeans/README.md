@@ -7,7 +7,7 @@ A similarity algorithm implementation of TF-IDF algorithm with cosin similarity 
 The task is to implement TF-IDF algorithm with cosin similarity in Apache Spark using Python. 
 Given a set of vectors to present a document as input, calculating the TF-IDF with cosin similarity to cluster those documents via similarity.
 
-#### Usage: bin/spark-submit kmeans <file> <k> <convergeDist> [outputfile.txt]
+#### Usage: bin/spark-submit kmeans.py <file> <k> <convergeDist> [outputfile.txt]
 	k - the number of clusters
 	convergDist - The converge distance/similarity to stop program iterations.
 	
