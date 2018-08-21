@@ -40,9 +40,6 @@ https://github.com/Cheng-Lin-Li/ website may contain links to external websites 
 Please note that the Cheng-Lin-Li's github does not guarantee the accuracy, relevance, timeliness, or completeness of any information on these external websites.
 
 ## Contact Information
-Cheng-Lin Li@University of Southern California
-
-chenglil@usc.edu or 
 
 clark.cl.li@gmail.com
 
